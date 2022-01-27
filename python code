@@ -1,0 +1,65 @@
+"""
+The following code is for question 1
+It lets the user input a value (h) and works out if it is a multiple of 3
+If it is the program will output 'True'
+If it isn't the program will output 'False'
+"""
+def question1(h): #defines the function so it can be called upon and a value for h can be inputted
+    
+    try:  #helps avoid errors for different inputs for h
+        h=int(h) #makes the value of h an integer so the following code works
+
+        if h in range(1,100):#if h is in the correct range the following code will work
+            h=h/3 #divides h by 3 
+            if h % 3 == 0: #if there is no remainder after h is divided by 3 the following code happens
+                print("True") #h is a multiple of 3 so 'True' is printed'
+            else:
+                print("False") #h is not a multiple of 3 for 'False' is printed
+        else:
+            print("Please make sure you input a number between 1 and 100") #h is not in the correct range so an error statement is printed
+        
+    except ValueError: #if there is a error in the type of value inputted the an error statement will be printed
+        print("Please make sure you input a number between 1 and 100")
+
+
+
+
+"""
+This is the code for question 2
+The user inputs a value (i) and the program calculates the square root of said value
+It then outputs the square root
+"""
+
+def question2(i): #defines the function so it can be called upon and a value for i can be inputted
+    import math #so the square root function can be used later on
+    try: #soerrors are avoided
+        i=int(i) #makes i an integer value
+        i=math.sqrt(i) #square roots the value of i
+        print(i) #prints the square root of the initial input
+    except ValueError: #if there is an error in the type of data inputted it prints an error statement
+        print("Please make sure you input a number")
+
+
+
+"""
+This is the code for question 3
+"""
+
+
+def question3(j):
+        j=int(j)
+        top = j**3 + 7*j
+        bottom = j-3
+        total = top/bottom#
+        print(total)
+
+print(question3(9))
+     
+
+
+
+
+
+
+
+
