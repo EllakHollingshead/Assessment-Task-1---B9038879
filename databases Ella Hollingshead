@@ -1,0 +1,14 @@
+1. 
+SELECT * first_name FROM student_number LIKE % 20000002
+SELECT * surname FROM student_number LIKE % 20000002
+SELECT * Q2_mark FROM student_number LIKE % 20000002
+
+2.
+INSERT INTO Students
+("First name", "Surname", "Student number", "Q1 mark", "Q2 mark", "Q3 mark")
+VALUES
+("Jemima", "Puddle-Duck", "20000004", "11", "7", "8");
+
+3.
+ALTER TABLE Students
+ADD "Total mark" TEXT;
